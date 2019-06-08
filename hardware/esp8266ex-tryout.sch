@@ -94,30 +94,20 @@ Wire Wire Line
 	11050 4000 10650 4000
 Text Label 8250 2650 2    50   ~ 0
 GPIO5
-Text Label 8250 2750 2    50   ~ 0
+Text Label 9200 2750 2    50   ~ 0
 SD_D1
-Text Label 8250 2850 2    50   ~ 0
+Text Label 9200 2850 2    50   ~ 0
 SD_D0
-Text Label 8250 2950 2    50   ~ 0
+Text Label 9200 2950 2    50   ~ 0
 SD_CLK
-Text Label 8250 3050 2    50   ~ 0
+Text Label 9200 3050 2    50   ~ 0
 SD_CMD
-Text Label 8250 3150 2    50   ~ 0
+Text Label 9200 3150 2    50   ~ 0
 SD_D3
-Text Label 8250 3250 2    50   ~ 0
+Text Label 9200 3250 2    50   ~ 0
 SD_D2
 Wire Wire Line
 	7400 2650 8250 2650
-Wire Wire Line
-	7400 2750 8250 2750
-Wire Wire Line
-	7400 2850 8250 2850
-Wire Wire Line
-	7400 3050 8250 3050
-Wire Wire Line
-	7400 3150 8250 3150
-Wire Wire Line
-	7400 3250 8250 3250
 Text Label 7800 1700 2    50   ~ 0
 RST
 Text Label 7800 1800 2    50   ~ 0
@@ -505,21 +495,6 @@ Wire Wire Line
 	6950 1500 6950 1250
 Connection ~ 6950 1250
 $Comp
-L taobao-r:R201,0603 R2
-U 1 1 5D014F86
-P 7800 2950
-F 0 "R2" V 7604 2950 50  0000 C CNN
-F 1 "R201,0603" V 7695 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7800 2950 50  0001 C CNN
-F 3 "~" H 7800 2950 50  0001 C CNN
-	1    7800 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7400 2950 7700 2950
-Wire Wire Line
-	7900 2950 8250 2950
-$Comp
 L my_power:Vesp8266 #PWR0114
 U 1 1 5D020F93
 P 8450 4500
@@ -853,4 +828,54 @@ Wire Wire Line
 	8550 2100 8550 2000
 Wire Wire Line
 	8550 2000 8700 2000
+$Comp
+L taobao-rpack:RN_201,0603 RN1
+U 1 1 5CFCF99C
+P 8350 2850
+F 0 "RN1" V 8675 2850 50  0000 C CNN
+F 1 "RN_201,0603" V 8584 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 8625 2850 50  0001 C CNN
+F 3 "~" H 8350 2850 50  0001 C CNN
+	1    8350 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L taobao-rpack:RN_201,0603 RN2
+U 1 1 5CFEBB7D
+P 8350 3250
+F 0 "RN2" V 8675 3250 50  0000 C CNN
+F 1 "RN_201,0603" V 8584 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 8625 3250 50  0001 C CNN
+F 3 "~" H 8350 3250 50  0001 C CNN
+	1    8350 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 3250 9200 3250
+Wire Wire Line
+	8550 2750 9200 2750
+Wire Wire Line
+	7400 2750 8150 2750
+Wire Wire Line
+	8550 2850 9200 2850
+Wire Wire Line
+	8550 3050 9200 3050
+Wire Wire Line
+	8550 3150 9200 3150
+Wire Wire Line
+	8550 2950 9200 2950
+Wire Wire Line
+	7400 2850 8150 2850
+Wire Wire Line
+	7400 2950 8150 2950
+Wire Wire Line
+	7400 3050 8150 3050
+Wire Wire Line
+	7400 3150 8150 3150
+Wire Wire Line
+	7400 3250 8150 3250
+NoConn ~ 8150 3350
+NoConn ~ 8150 3450
+NoConn ~ 8550 3450
+NoConn ~ 8550 3350
 $EndSCHEMATC

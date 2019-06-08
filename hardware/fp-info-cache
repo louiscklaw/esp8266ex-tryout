@@ -1,4 +1,4 @@
-19563893540440697
+19565453502482697
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44281,6 +44281,13 @@ ESP8266EX
 0
 59
 33
+footprint-lib
+ESP8266EX_SERVICE
+ESP8266EX_SERVICE
+ESP8266EX_SERVICE
+0
+4
+4
 footprint-lib
 FBGA96
 FBGA96-UNIVERSAL PACKAGE
